@@ -1,0 +1,23 @@
+{
+  "version": "0.0.0",
+  "name": "Memo Kerjaan",
+  "manifest_version": 2,
+  "description": "catat kerjaan agar tidak lupa",
+  "browser_action": {
+    "default_title": "catat kerjaan agar tidak lupa",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/Pengertian-Memo.jpg",
+    "48": "img/Pengertian-Memo.jpg",
+    "128": "img/Pengertian-Memo.jpg"
+  },
+  "web_accessible_resources": [
+    "inject.html"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [ "contextMenus", "tabs", "storage", "https://github.com/*" ],
+  "content_security_policy": "default-src 'self'; script-src 'self'; style-src * 'unsafe-inline'; img-src 'self' data:;"
+}
